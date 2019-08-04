@@ -1,4 +1,4 @@
-import { UserInterface } from './types';
+import { UserInterface } from './types/index';
 
 export const generatedUsersList: UserInterface[] = [
   {

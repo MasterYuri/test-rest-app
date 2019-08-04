@@ -1,3 +1,5 @@
+import { BaseListResponseInterface, BaseResponseInterface } from '../../types';
+
 export interface UserInterface {
   id?: string;
   email?: string;
@@ -15,15 +17,6 @@ export class CreateUserDto {
   readonly email: string;
   readonly first_name?: string; // tslint:disable-line
   readonly last_name?: string; // tslint:disable-line
-}
-
-export interface BaseListResponseInterface<T> {
-  items: T[];
-  total: number;
-}
-
-export interface BaseResponseInterface<T> {
-  item: T;
 }
 
 export interface UsersListResponseInterface extends BaseListResponseInterface<UserInterface> {

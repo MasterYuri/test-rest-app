@@ -1,1 +1,1 @@
-export * from './users.interface';
+export * from './base-response.interface';
